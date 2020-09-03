@@ -21,11 +21,14 @@ class Transaction {
   @Column()
   type: 'income' | 'outcome';
 
-  @Column('decimal')
+  @Column()
   value: number;
 
   @ManyToOne(() => Category)
   @JoinColumn({ name: 'category_id' })
+  category: Category;
+
+  @Column()
   category_id: string;
 
   @CreateDateColumn()

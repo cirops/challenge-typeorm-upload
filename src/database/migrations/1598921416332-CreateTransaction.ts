@@ -24,12 +24,7 @@ export default class CreateTransaction1598921416332
             name: 'type',
             type: 'varchar',
           },
-          {
-            name: 'value',
-            type: 'decimal',
-            precision: 10,
-            scale: 2,
-          },
+          { name: 'value', type: 'float' },
           {
             name: 'created_at',
             type: 'timestamp',
